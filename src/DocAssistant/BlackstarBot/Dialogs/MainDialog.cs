@@ -53,7 +53,7 @@ namespace DocAssistant.Dialogs
 					.GetCustomAttribute<AssemblyInformationalVersionAttribute>()
 					.InformationalVersion;
 
-				await stepContext.Context.SendActivityAsync(MessageFactory.Text($"Blackstar MS Teams bot version: {version}"), cancellationToken);
+				await stepContext.Context.SendActivityAsync(MessageFactory.Text($"DocAssistant Web App build version: {version}"), cancellationToken);
 
 			}
 

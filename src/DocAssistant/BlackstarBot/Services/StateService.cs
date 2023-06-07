@@ -1,8 +1,7 @@
-﻿using BlackstarBot.Models;
-
-using Microsoft.Bot.Builder;
+﻿using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Dialogs;
 using System;
+using DocAssistant.Models;
 
 namespace DocAssistant.Services
 {

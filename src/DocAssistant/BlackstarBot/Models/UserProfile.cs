@@ -1,4 +1,4 @@
-﻿namespace BlackstarBot.Models
+﻿namespace DocAssistant.Models
 {
 	public class UserProfile
 	{

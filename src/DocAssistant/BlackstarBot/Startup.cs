@@ -30,41 +30,6 @@ namespace DocAssistant
 			services.AddControllersWithViews();
 			services.AddControllers().AddNewtonsoftJson();
 
-			//services.AddHttpClient<IBlackstarWebApiService, BlackstarWebApiWebApiService>()
-			//	.ConfigurePrimaryHttpMessageHandler(() =>
-			//{
-			//	var blackstarWebApiEndpoints = new BlackstarWebApiUrlSection();
-			//	Configuration.GetSection(nameof(BlackstarWebApiUrlSection)).Bind(blackstarWebApiEndpoints);
-
-			//	var gunvorProxyConfig = new GunvorProxyConfiguration();
-			//	Configuration.GetSection(nameof(GunvorProxyConfiguration)).Bind(gunvorProxyConfig);
-
-			//	var handler = new HttpClientHandler();
-
-			//	if (blackstarWebApiEndpoints.BypassCertificateValidation)
-			//	{
-			//		handler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true;
-
-			//	}
-
-			//	if (blackstarWebApiEndpoints.UseProxy)
-			//	{
-			//		if (gunvorProxyConfig.IsEnabled)
-			//		{
-			//			var proxy = new WebProxy
-			//			{
-			//				Address = new Uri(gunvorProxyConfig.Uri),
-			//				BypassProxyOnLocal = gunvorProxyConfig.BypassProxyOnLocal,
-			//				UseDefaultCredentials = gunvorProxyConfig.UseDefaultCredentials,
-			//			};
-
-			//			handler.Proxy = proxy;
-			//		}
-			//	}
-
-			//	return handler;
-			//});
-
 			// Create the Bot Framework Adapter with error handling enabled.
 			services.AddSingleton<IBotFrameworkHttpAdapter, AdapterWithErrorHandler>();
 
