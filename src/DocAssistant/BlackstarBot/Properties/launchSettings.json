@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "DocAssistant_Dev": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:50885;http://localhost:50886"
+    },
+    "DocAssistant_Test": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Test"
+      },
+      "applicationUrl": "https://localhost:50885;http://localhost:50886"
+    }
+  }
+}
